@@ -1,3 +1,139 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A personal collection of mathematics, teaching and research resources, code, and videos."><title>Code &amp; Projects | Leo's Repository</title><link rel="stylesheet" href="style.css"></head>
-<body><header><div class="wrap top"><a class="brand" href="index.html">Leo's Repository</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="mathematics.html">Mathematics</a><a href="teaching.html">Teaching</a><a href="research.html">Readings & Research</a><a href="code.html" class="active" aria-current="page">Code & Projects</a><a href="explore.html">Hiking & Videos</a></nav></div></header><main class="wrap"><div class="page-intro"><p class="breadcrumb"><a href="index.html">Home</a> / Code &amp; Projects</p><h1>Code &amp; Projects</h1><p class="lead">Programming projects and reusable code.</p></div><h2>Repositories</h2><div class="list"><article class="entry"><div><h3>My public GitHub repositories</h3><p>Browse code already published on GitHub.</p></div><a href="https://github.com/leocrisologo-pshs?tab=repositories" target="_blank" rel="noopener noreferrer">Open ↗</a></article></div><h2>Selected projects</h2><div class="list"><article class="entry"><div><h3>Python / Manim projects</h3><p>Add individual repositories and examples when ready.</p></div><span class="placeholder">Link to be added</span></article></div></main><footer><div class="wrap">A personal resource collection · <a href="https://github.com/leocrisologo-pshs">GitHub</a></div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Code used in mathematics lessons and other projects.">
+<title>Code &amp; Projects | Leo Andrei Crisologo's Repository</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .project-groups{display:grid;gap:20px;margin:22px 0 36px}
+  .project-group{border:1px solid var(--line,#dce2ea);border-radius:12px;background:white;overflow:hidden}
+  .project-group summary{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:19px;cursor:pointer;list-style:none}
+  .project-group summary::-webkit-details-marker{display:none}
+  .project-group summary::after{content:'+';font-size:23px;color:var(--sub,#64748b)}
+  .project-group[open] summary::after{content:'−'}
+  .project-group summary:focus-visible{outline:3px solid #4f85bd;outline-offset:-3px}
+  .project-group h2{margin:0;font-size:20px}
+  .project-inner{padding:0 19px 17px}
+  .project-description{margin:0 0 12px;color:var(--sub,#64748b)}
+  .project-meta{font-size:13px;margin-bottom:14px}
+  .project-meta a,.file-links a{margin-right:16px}
+  .file-count{font-size:13px;color:var(--sub,#64748b);white-space:nowrap}
+  .file-list{border-top:1px solid var(--line,#dce2ea)}
+  .code-file{border-bottom:1px solid var(--line,#dce2ea);padding:16px 0}
+  .code-file:last-child{border-bottom:0}
+  .code-file h3{font-size:16px;margin:0 0 6px;overflow-wrap:anywhere}
+  .code-file p{margin:0 0 9px;font-size:14px;line-height:1.5;color:var(--sub,#64748b)}
+  .file-path{font-size:12px;color:var(--sub,#64748b);overflow-wrap:anywhere}
+  .file-links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+  .file-links a{margin:0}
+  .muted-note{color:var(--sub,#64748b);font-size:14px}
+  @media(max-width:600px){.project-group summary{padding:15px}.project-inner{padding:0 15px 15px}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><a class="brand" href="index.html">Leo Andrei Crisologo's Repository</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="mathematics.html">Lesson Videos in High School Mathematics</a><a href="teaching.html">Teaching</a><a href="research.html">Readings &amp; Research</a><a href="code.html" class="active" aria-current="page">Code &amp; Projects</a><a href="explore.html">Hiking &amp; Videos</a></nav></div></header>
+<main class="wrap">
+  <div class="page-intro"><p class="breadcrumb"><a href="index.html">Home</a> / Code &amp; Projects</p><h1>Code &amp; Projects</h1><p class="lead">Code and related resources used in lessons and other projects.</p></div>
+  <div id="project-groups" class="project-groups" aria-live="polite"></div>
+  <noscript><p>JavaScript is needed to list files automatically. <a href="https://github.com/leocrisologo-pshs/pshs-grade12-math6">Browse the Grade 12 Mathematics 6 repository on GitHub</a>.</p></noscript>
+</main>
+<footer><div class="wrap">A personal resource collection · <a href="https://github.com/leocrisologo-pshs">GitHub</a></div></footer>
+<script>
+/*
+  HOW TO EDIT THIS PAGE
+  Each item under PROJECTS is one expandable code collection.
+  Add another PROJECTS entry to create a new group for a future repository.
+  In "notes", use the exact repository filename/path as the key.
+  Replace the example below with a real path before publishing your description:
+
+    notes: {
+      "example.py": {
+        title: "Optional friendlier name",
+        description: "Used to animate the disk method for solids of revolution.",
+        video: "https://www.youtube.com/watch?v=VIDEO_ID"
+      }
+    }
+
+  Leave entries out of notes to show "Description to be added" and
+  "Video link to be added". All files load automatically from GitHub.
+*/
+const PROJECTS = [
+  {
+    title: 'PSHS Grade 12 Mathematics 6',
+    description: 'Code resources for Grade 12 Mathematics 6 lessons. Add a short note to each file explaining where the code was used.',
+    owner: 'leocrisologo-pshs',
+    repo: 'pshs-grade12-math6',
+    notes: {}
+  }
+];
+
+const container = document.getElementById('project-groups');
+function element(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function anchor(label, url) {
+  const a = element('a', '', label);
+  a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+  return a;
+}
+function buildGroup(project, index) {
+  const details = element('details', 'project-group');
+  if (index === 0) details.open = true;
+  const summary = element('summary');
+  const name = element('h2', '', project.title);
+  const count = element('span', 'file-count', 'Loading files…');
+  summary.append(name, count); details.append(summary);
+  const inner = element('div', 'project-inner');
+  inner.append(element('p', 'project-description', project.description));
+  const meta = element('div', 'project-meta');
+  meta.append(anchor('View full repository ↗', `https://github.com/${project.owner}/${project.repo}`));
+  inner.append(meta);
+  const list = element('div', 'file-list'); inner.append(list); details.append(inner);
+  container.append(details);
+  loadFiles(project, count, list);
+}
+async function loadFiles(project, count, list) {
+  const repoURL = `https://github.com/${project.owner}/${project.repo}`;
+  try {
+    // Read the default branch first, so the page works with either main or master.
+    const metadataResponse = await fetch(`https://api.github.com/repos/${project.owner}/${project.repo}`);
+    if (!metadataResponse.ok) throw new Error(`GitHub returned ${metadataResponse.status}`);
+    const metadata = await metadataResponse.json();
+    const branch = metadata.default_branch;
+    const treeResponse = await fetch(`https://api.github.com/repos/${project.owner}/${project.repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
+    if (!treeResponse.ok) throw new Error(`GitHub returned ${treeResponse.status}`);
+    const tree = await treeResponse.json();
+    if (tree.truncated) throw new Error('The repository is too large to list fully');
+    const files = (tree.tree || []).filter(f => f.type === 'blob').sort((a,b)=>a.path.localeCompare(b.path,undefined,{numeric:true}));
+    count.textContent = `${files.length} file${files.length === 1 ? '' : 's'}`;
+    if (files.length === 0) {list.append(element('p','muted-note','No files found.'));return;}
+    files.forEach(file => {
+      const info = (project.notes || {})[file.path] || {};
+      const item = element('article', 'code-file');
+      const h3 = element('h3');
+      const fileURL = `${repoURL}/blob/${encodeURIComponent(branch)}/${file.path.split('/').map(encodeURIComponent).join('/')}`;
+      h3.append(anchor(info.title || file.path.split('/').pop(), fileURL));
+      item.append(h3);
+      if (file.path.includes('/')) item.append(element('div','file-path',file.path));
+      item.append(element('p','',info.description || 'Description to be added: where this code was used and what it demonstrates.'));
+      const links = element('div','file-links');
+      links.append(anchor('View code ↗',fileURL));
+      if (info.video && /^https:\/\//.test(info.video)) links.append(anchor('Watch related video ↗', info.video));
+      else links.append(element('span','muted-note','Video link to be added'));
+      item.append(links); list.append(item);
+    });
+  } catch (error) {
+    count.textContent = 'Repository files';
+    list.append(element('p','muted-note','The file list could not be loaded automatically. You can still open the full repository below.'));
+    list.append(anchor('Browse repository files ↗',repoURL));
+  }
+}
+PROJECTS.forEach(buildGroup);
+</script>
+</body>
+</html>
