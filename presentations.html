@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Links to public presentations and talk videos.">
+  <title>Public Presentations | Leo Andrei Crisologo's Repository</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.presentation-list{border:1px solid var(--line,#e2e8f0);border-radius:12px;background:#fff;margin:23px 0 32px;padding:0 18px}
+.presentation-item{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid var(--line,#e2e8f0)}
+.presentation-item:last-child{border-bottom:0}
+.presentation-thumb{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;width:100%;border:1px dashed #b9c4d0;border-radius:8px;background:#f2f5f8;color:var(--sub,#64748b);font-size:13px;text-align:center;padding:8px;overflow:hidden}
+.presentation-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.presentation-body{min-width:0}
+.presentation-body h2{font-size:17px;margin:0 0 6px;line-height:1.4}
+.presentation-body p{margin:0 0 9px;color:var(--sub,#64748b);font-size:14px;line-height:1.55}
+.presentation-link{font-size:13px}
+.placeholder-label{font-size:12px;color:var(--sub,#64748b)}
+@media(max-width:540px){.presentation-list{padding:0 12px}.presentation-item{grid-template-columns:105px minmax(0,1fr);gap:12px}.presentation-body h2{font-size:15px}.presentation-body p{font-size:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><a class="brand" href="index.html">Leo Andrei Crisologo's Repository</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="mathematics.html">High School Mathematics Lesson Videos</a><a href="teaching.html">Teaching Resources</a><a href="presentations.html" class="active" aria-current="page">Public Presentations</a><a href="code.html">Coding Projects</a><a href="research.html">Readings and Research</a><a href="explore.html">Outdoor Activities</a></nav></div></header>
+<main class="wrap">
+<div class="page-intro">
+  <p class="breadcrumb"><a href="index.html">Home</a> / Public Presentations</p>
+  <h1>Public Presentations</h1>
+  <p class="lead">Slides and videos of presentations I have made or taken part in.</p>
+</div>
+
+<!--
+HOW TO ADD OR EDIT PRESENTATIONS
+
+1. Copy a complete <article class="presentation-item"> ... </article> block below.
+2. Paste it above the closing </div> of .presentation-list.
+3. Change the <h2> title and <p> description.
+4. Replace the placeholder label inside .presentation-thumb with a real image:
+   For a YouTube video, use the video ID from its URL:
+     <img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Thumbnail for YOUR TITLE" loading="lazy">
+   For Canva slides, you can upload a preview image to your GitHub Pages
+   repository (e.g. images/presentation-01.jpg), then use:
+     <img src="images/presentation-01.jpg" alt="Preview of YOUR TITLE" loading="lazy">
+   A thumbnail is optional. You can leave the placeholder text as it is.
+5. Replace the placeholder below with a link to the public presentation:
+     <a class="presentation-link" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noopener noreferrer">Watch presentation ↗</a>
+   OR
+     <a class="presentation-link" href="YOUR_PUBLIC_CANVA_URL" target="_blank" rel="noopener noreferrer">View Canva slides ↗</a>
+   If you have both a video and slides, include both <a> links.
+6. Delete the <span class="placeholder-label">Link to be added</span> text when links are ready.
+7. DO NOT publish private or edit-access Canva links. Use public view-only URLs.
+   Do not place private/class-only content on this public website.
+-->
+
+<div class="presentation-list" aria-label="Presentation list">
+  <!-- Presentation 1 -->
+  <article class="presentation-item">
+    <div class="presentation-thumb">Presentation thumbnail</div>
+    <div class="presentation-body">
+      <h2>Presentation title 1</h2>
+      <p>Brief description: subject, event or venue, and your role in the presentation.</p>
+      <span class="placeholder-label">Link to Canva slides or YouTube video to be added</span>
+    </div>
+  </article>
+
+  <!-- Presentation 2 -->
+  <article class="presentation-item">
+    <div class="presentation-thumb">Presentation thumbnail</div>
+    <div class="presentation-body">
+      <h2>Presentation title 2</h2>
+      <p>Brief description: subject, event or venue, and your role in the presentation.</p>
+      <span class="placeholder-label">Link to Canva slides or YouTube video to be added</span>
+    </div>
+  </article>
+
+  <!-- Presentation 3 -->
+  <article class="presentation-item">
+    <div class="presentation-thumb">Presentation thumbnail</div>
+    <div class="presentation-body">
+      <h2>Presentation title 3</h2>
+      <p>Brief description: subject, event or venue, and your role in the presentation.</p>
+      <span class="placeholder-label">Link to Canva slides or YouTube video to be added</span>
+    </div>
+  </article>
+</div>
+</main>
+<footer><div class="wrap">A personal resource collection · <a href="https://github.com/leocrisologo-pshs">GitHub</a></div></footer>
+</body>
+</html>
