@@ -1,91 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Links to public presentations and talk videos.">
-  <title>Public Presentations | Leo Andrei Crisologo's Repository</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-.presentation-list{border:1px solid var(--line,#e2e8f0);border-radius:12px;background:#fff;margin:23px 0 32px;padding:0 18px}
-.presentation-item{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid var(--line,#e2e8f0)}
-.presentation-item:last-child{border-bottom:0}
-.presentation-thumb{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;width:100%;border:1px dashed #b9c4d0;border-radius:8px;background:#f2f5f8;color:var(--sub,#64748b);font-size:13px;text-align:center;padding:8px;overflow:hidden}
-.presentation-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Public presentation recordings and presentation decks.">
+<title>Public Presentations | Leo Andrei Crisologo's Repository</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.presentation-list{border:1px solid var(--line,#e2e8f0);border-radius:12px;background:#fff;margin:18px 0 34px;padding:0 18px}
+.recording-item{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px;align-items:start;padding:18px 0;border-bottom:1px solid var(--line,#e2e8f0)}
+.deck-item{padding:18px 0;border-bottom:1px solid var(--line,#e2e8f0)}
+.recording-item:last-child,.deck-item:last-child{border-bottom:0}
+.presentation-thumbnail{display:block;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#eef2f6;position:relative}
+.presentation-thumbnail img{display:block;width:100%;height:100%;object-fit:cover}
 .presentation-body{min-width:0}
-.presentation-body h2{font-size:17px;margin:0 0 6px;line-height:1.4}
-.presentation-body p{margin:0 0 9px;color:var(--sub,#64748b);font-size:14px;line-height:1.55}
+.presentation-body h3{font-size:16px;margin:0 0 7px;line-height:1.45}
+.presentation-body h3 a{text-decoration:none}.presentation-body h3 a:hover{text-decoration:underline}
+.presentation-body p{font-size:14px;line-height:1.6;margin:0 0 10px;color:var(--sub,#64748b)}
 .presentation-link{font-size:13px}
-.placeholder-label{font-size:12px;color:var(--sub,#64748b)}
-@media(max-width:540px){.presentation-list{padding:0 12px}.presentation-item{grid-template-columns:105px minmax(0,1fr);gap:12px}.presentation-body h2{font-size:15px}.presentation-body p{font-size:13px}}
+@media(max-width:540px){.presentation-list{padding:0 12px}.recording-item{grid-template-columns:106px minmax(0,1fr);gap:11px}.presentation-body h3{font-size:14px}.presentation-body p{font-size:12px}}
 </style>
 </head>
 <body>
 <header><div class="wrap top"><a class="brand" href="index.html">Leo Andrei Crisologo's Repository</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="mathematics.html">High School Mathematics Lesson Videos</a><a href="teaching.html">Teaching Resources</a><a href="presentations.html" class="active" aria-current="page">Public Presentations</a><a href="code.html">Coding Projects</a><a href="research.html">Readings and Research</a><a href="explore.html">Outdoor Activities</a></nav></div></header>
-<main class="wrap">
-<div class="page-intro">
-  <p class="breadcrumb"><a href="index.html">Home</a> / Public Presentations</p>
-  <h1>Public Presentations</h1>
-  <p class="lead">Slides and videos of presentations I have made or taken part in.</p>
+<main class="wrap"><div class="page-intro"><p class="breadcrumb"><a href="index.html">Home</a> / Public Presentations</p><h1>Public Presentations</h1><p class="lead">Presentation recordings and public slide decks.</p></div>
+<h2>Presentation Recordings</h2>
+<!-- TO ADD A RECORDING: Copy a complete <article class="recording-item"> block and edit the video ID in all three places: href, thumbnail src, and Watch link. Replace the title, image alt text, and description. Descriptions are optional. -->
+<div class="presentation-list" aria-label="Presentation recordings">
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/ZkMmkz1_3Cw" target="_blank" rel="noopener noreferrer" aria-label="Watch Teaching Geometry with Origami | Making HEADway Classroom #1 on YouTube"><img src="https://i.ytimg.com/vi/ZkMmkz1_3Cw/hqdefault.jpg" alt="Video thumbnail: Teaching Geometry with Origami | Making HEADway Classroom #1" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/ZkMmkz1_3Cw" target="_blank" rel="noopener noreferrer">Teaching Geometry with Origami | Making HEADway Classroom #1</a></h3><a class="presentation-link" href="https://youtu.be/ZkMmkz1_3Cw" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/HamK22Ghf1g" target="_blank" rel="noopener noreferrer" aria-label="Watch Making HEADway: Applying STEM Pedagogies | Teaching STEM in Southeast Asia on YouTube"><img src="https://i.ytimg.com/vi/HamK22Ghf1g/hqdefault.jpg" alt="Video thumbnail: Making HEADway: Applying STEM Pedagogies | Teaching STEM in Southeast Asia" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/HamK22Ghf1g" target="_blank" rel="noopener noreferrer">Making HEADway: Applying STEM Pedagogies | Teaching STEM in Southeast Asia</a></h3><p>A panel discussion hosted by The HEAD Foundation.</p><a class="presentation-link" href="https://youtu.be/HamK22Ghf1g" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/j80SH5n9VxA" target="_blank" rel="noopener noreferrer" aria-label="Watch International Trends in Science (STEM) Education on YouTube"><img src="https://i.ytimg.com/vi/j80SH5n9VxA/hqdefault.jpg" alt="Video thumbnail: International Trends in Science (STEM) Education" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/j80SH5n9VxA" target="_blank" rel="noopener noreferrer">International Trends in Science (STEM) Education</a></h3><p>Online in-service training conducted for Schools Division Office of Camarines Sur and Hanawan National High School.</p><a class="presentation-link" href="https://youtu.be/j80SH5n9VxA" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/gSquELGPIaY" target="_blank" rel="noopener noreferrer" aria-label="Watch Isometries and Symmetries in Weaving Patterns on YouTube"><img src="https://i.ytimg.com/vi/gSquELGPIaY/hqdefault.jpg" alt="Video thumbnail: Isometries and Symmetries in Weaving Patterns" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/gSquELGPIaY" target="_blank" rel="noopener noreferrer">Isometries and Symmetries in Weaving Patterns</a></h3><p>A video presentation for Math Day of Jose Rizal University with the theme “Mathematics for a Better World.”</p><a class="presentation-link" href="https://youtu.be/gSquELGPIaY" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/wUca8DyJeTc" target="_blank" rel="noopener noreferrer" aria-label="Watch Implementing asynchronous classes in a learning management system via prerecorded lesson videos on YouTube"><img src="https://i.ytimg.com/vi/wUca8DyJeTc/hqdefault.jpg" alt="Video thumbnail: Implementing asynchronous classes in a learning management system via prerecorded lesson videos" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/wUca8DyJeTc" target="_blank" rel="noopener noreferrer">Implementing asynchronous classes in a learning management system via prerecorded lesson videos</a></h3><p>A presentation for the PSHSS National Teachers’ Conference 2021.</p><a class="presentation-link" href="https://youtu.be/wUca8DyJeTc" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
+<article class="recording-item">
+<a class="presentation-thumbnail" href="https://youtu.be/moZtKAeV8Zs" target="_blank" rel="noopener noreferrer" aria-label="Watch Pi-day: Symmetries in Mexican and Philippine Weavings on YouTube"><img src="https://i.ytimg.com/vi/moZtKAeV8Zs/hqdefault.jpg" alt="Video thumbnail: Pi-day: Symmetries in Mexican and Philippine Weavings" loading="lazy"></a>
+<div class="presentation-body"><h3><a href="https://youtu.be/moZtKAeV8Zs" target="_blank" rel="noopener noreferrer">Pi-day: Symmetries in Mexican and Philippine Weavings</a></h3><p>For Pi-day (March 14), students from Philippine Science High School Main Campus and Colegio de Ciencias y Humanidades Plantel Sur met to discuss similarities in Mexican and Philippine history and culture, then explored isometries and symmetries in weaving patterns. Organized by Ernesto Marquez Fragoso (FDAI 2020 Syracuse University) and Leo Andrei Crisologo (FDAI 2020 Indiana University of Pennsylvania).</p><a class="presentation-link" href="https://youtu.be/moZtKAeV8Zs" target="_blank" rel="noopener noreferrer">Watch recording ↗</a></div></article>
 </div>
-
-<!--
-HOW TO ADD OR EDIT PRESENTATIONS
-
-1. Copy a complete <article class="presentation-item"> ... </article> block below.
-2. Paste it above the closing </div> of .presentation-list.
-3. Change the <h2> title and <p> description.
-4. Replace the placeholder label inside .presentation-thumb with a real image:
-   For a YouTube video, use the video ID from its URL:
-     <img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Thumbnail for YOUR TITLE" loading="lazy">
-   For Canva slides, you can upload a preview image to your GitHub Pages
-   repository (e.g. images/presentation-01.jpg), then use:
-     <img src="images/presentation-01.jpg" alt="Preview of YOUR TITLE" loading="lazy">
-   A thumbnail is optional. You can leave the placeholder text as it is.
-5. Replace the placeholder below with a link to the public presentation:
-     <a class="presentation-link" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noopener noreferrer">Watch presentation ↗</a>
-   OR
-     <a class="presentation-link" href="YOUR_PUBLIC_CANVA_URL" target="_blank" rel="noopener noreferrer">View Canva slides ↗</a>
-   If you have both a video and slides, include both <a> links.
-6. Delete the <span class="placeholder-label">Link to be added</span> text when links are ready.
-7. DO NOT publish private or edit-access Canva links. Use public view-only URLs.
-   Do not place private/class-only content on this public website.
--->
-
-<div class="presentation-list" aria-label="Presentation list">
-  <!-- Presentation 1: Canva. To show a slide preview later, upload an image and replace the thumbnail text with:
-       <img src="images/copyright-your-work.jpg" alt="Preview of Copyright your work!" loading="lazy">
-       Keep the public Canva link below. -->
-  <article class="presentation-item">
-    <div class="presentation-thumb">Canva presentation</div>
-    <div class="presentation-body">
-      <h2>Copyright your work!</h2>
-      <p>A short introduction to Intellectual Property Rights and how to protect them in the Philippine context.</p>
-      <a class="presentation-link" href="https://canva.link/rqq7gp7g39yh70x" target="_blank" rel="noopener noreferrer">View Canva presentation ↗</a>
-    </div>
-  </article>
-
-  <!-- Presentation 2 -->
-  <article class="presentation-item">
-    <div class="presentation-thumb">Presentation thumbnail</div>
-    <div class="presentation-body">
-      <h2>Presentation title 2</h2>
-      <p>Brief description: subject, event or venue, and your role in the presentation.</p>
-      <span class="placeholder-label">Link to Canva slides or YouTube video to be added</span>
-    </div>
-  </article>
-
-  <!-- Presentation 3 -->
-  <article class="presentation-item">
-    <div class="presentation-thumb">Presentation thumbnail</div>
-    <div class="presentation-body">
-      <h2>Presentation title 3</h2>
-      <p>Brief description: subject, event or venue, and your role in the presentation.</p>
-      <span class="placeholder-label">Link to Canva slides or YouTube video to be added</span>
-    </div>
-  </article>
-</div>
-</main>
-<footer><div class="wrap">A personal resource collection · <a href="https://github.com/leocrisologo-pshs">GitHub</a></div></footer>
-</body>
-</html>
+<h2>Presentation Decks</h2>
+<!-- TO ADD A CANVA DECK: Copy one complete <article class="deck-item"> block below. Change its <h3> title, optional <p> description, and both link URLs. Only use PUBLIC VIEW-ONLY Canva links, not edit-access or private links. Decks intentionally have no thumbnails. -->
+<div class="presentation-list" aria-label="Presentation decks">
+<article class="deck-item"><div class="presentation-body"><h3><a href="https://canva.link/5ekzmq8g0i0crs6" target="_blank" rel="noopener noreferrer">Open Educational Resources in High School Mathematics</a></h3><a class="presentation-link" href="https://canva.link/5ekzmq8g0i0crs6" target="_blank" rel="noopener noreferrer">View Canva deck ↗</a></div></article>
+<article class="deck-item"><div class="presentation-body"><h3><a href="https://canva.link/wg2e9k42t01q92v" target="_blank" rel="noopener noreferrer">Innovations in Teaching and Learning STEM: NYPI Batch 3 Report</a></h3><a class="presentation-link" href="https://canva.link/wg2e9k42t01q92v" target="_blank" rel="noopener noreferrer">View Canva deck ↗</a></div></article>
+<article class="deck-item"><div class="presentation-body"><h3><a href="https://canva.link/rqq7gp7g39yh70x" target="_blank" rel="noopener noreferrer">Copyright your work!</a></h3><p>A short introduction to Intellectual Property Rights and how to protect them in the Philippine context.</p><a class="presentation-link" href="https://canva.link/rqq7gp7g39yh70x" target="_blank" rel="noopener noreferrer">View Canva deck ↗</a></div></article>
+</div></main><footer><div class="wrap">A personal resource collection · <a href="https://github.com/leocrisologo-pshs">GitHub</a></div></footer></body></html>
